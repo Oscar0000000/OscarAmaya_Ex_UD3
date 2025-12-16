@@ -7,7 +7,7 @@ import javax.swing.WindowConstants;
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
+ *//**Clase principal que gestiona las apuestas del programa, permite crear y eliminar partidos.*/
 
 public class Apuesta extends javax.swing.JFrame {
 
@@ -172,7 +172,7 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modeloquinielaresuelta);
     }//GEN-LAST:event_bRealizarActionPerformed
 
-    
+    /**Crea un partido nuevo */
     public void partidoNuevo(String partido)
     {
         DefaultListModel modelonuevo = new DefaultListModel();
@@ -186,7 +186,7 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaQuiniela.setModel(modelonuevo);
     }
     
-  
+  /**Elimina un partido que ya es existente  */
     public void borraPartido(int indice)
     {
         DefaultListModel modelonuevoquiniela = new DefaultListModel();
